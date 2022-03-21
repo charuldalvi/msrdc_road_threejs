@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IC04</title>
+  </head>
+  <body>
+    <div class="loading-container">
+      <p>Loading...</p>
+      <p id="percentage">0%</p>
+    </div>
+    <canvas class="webgl"></canvas>
+    <canvas id="nagpur" width="100" height="64">
+      <p>Nagpur</p>
+    </canvas>
+    <div class="UI">
+      <div class="zoom-controls">
+        <div class="plus-button">
+          <img src="./assets/Plus.svg" alt="Plus">
+        </div>
+       <div class="hr"></div>
+        <div class="minus-button">
+          <img src="./assets/Minus.svg" alt="Minus">
+        </div>
+      </div>
+      <div class="flip_and_directions">
+        <button class="flip-button">Flip</button>
+        <div class="direction-box">
+          <div class="opened">
+            <div class="from_towards">
+              <p>From</p>
+              <p>Towards</p>
+            </div>
+            <div class="row">
+              <p class="cityA">Mumbai</p>
+              <img class="swap_btn_mumnag" src="./assets/Swap_btn.svg" alt="Swap">
+              <p class="cityB">Nagpur</p>
+              <div class="switch_button_mumnag">
+                <div class="switch_handle_mumnag"></div>
+              </div>
+            </div>
+            <div class="row">
+              <p class="cityA">Mumbai</p>
+              <img class="swap_btn_mumarv" src="./assets/Swap_btn.svg" alt="Swap">
+              <p class="cityB">Arvi</p>
+              <div class="switch_button_mumarv">
+                <div class="switch_handle_mumarv"></div>
+              </div>
+            </div>
+            <div class="row">
+              <p class="cityA">Mumbai</p>
+              <img class="swap_btn_mumwardha" src="./assets/Swap_btn.svg" alt="Swap">
+              <p class="cityB">Wardha</p>
+              <div class="switch_button_mumwardha">
+                <div class="switch_handle_mumwardha"></div>
+              </div>
+            </div>
+            <div class="row">
+              <p class="cityA">Nagpur</p>
+              <img class="swap_btn_nagarv" src="./assets/Swap_btn.svg" alt="Swap">
+              <p class="cityB">Arvi</p>
+              <div class="switch_button_nagarv">
+                <div class="switch_handle_nagarv"></div>
+              </div>
+            </div>
+            <div class="row">
+              <p class="cityA">Nagpur</p>
+              <img class="swap_btn_nagwardha" src="./assets/Swap_btn.svg" alt="Swap">
+              <p class="cityB">Wardha</p>
+              <div class="switch_button_nagwardha">
+                <div class="switch_handle_nagwardha"></div>
+              </div>
+            </div>
+            <div class="row">
+              <p class="cityA">Arvi</p>
+              <img class="swap_btn_arvwardha" src="./assets/Swap_btn.svg" alt="Swap">
+              <p class="cityB">Wardha</p>
+              <div class="switch_button_arvwardha">
+                <div class="switch_handle_arvwardha"></div>
+              </div>
+            </div>
+          </div>
+          <div class="closed">
+            <img id="direction_icon" src="./assets/Directions Icon.svg" alt="Directions icon">
+            <p>Directions</p>
+            <img id="dropdown_arrow" src="./assets/arrow.svg" alt="Arrow icon">
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
